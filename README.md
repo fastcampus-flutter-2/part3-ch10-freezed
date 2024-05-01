@@ -1,2 +1,3 @@
-# part3-ch10-freezed
- 
+# ch10_fastcampus_freezed
+
+A new Flutter project.
