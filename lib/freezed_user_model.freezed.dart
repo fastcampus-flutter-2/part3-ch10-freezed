@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,34 +10,57 @@ part of 'freezed_user_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-FreezedUserModel _$FreezedUserModelFromJson(Map<String, dynamic> json) {
-  return _FreezedUserModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$FreezedUserModel {
-  int? get id => throw _privateConstructorUsedError;
-  String? get name => throw _privateConstructorUsedError;
-  String? get username => throw _privateConstructorUsedError;
-  String? get email => throw _privateConstructorUsedError;
-  Address? get address => throw _privateConstructorUsedError;
+  int? get id;
+  String? get name;
+  String? get username;
+  String? get email;
+  Address? get address;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $FreezedUserModelCopyWith<FreezedUserModel> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$FreezedUserModelCopyWithImpl<FreezedUserModel>(
+          this as FreezedUserModel, _$identity);
+
+  /// Serializes this FreezedUserModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is FreezedUserModel &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.address, address) || other.address == address));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, id, name, username, email, address);
+
+  @override
+  String toString() {
+    return 'FreezedUserModel(id: $id, name: $name, username: $username, email: $email, address: $address)';
+  }
 }
 
 /// @nodoc
-abstract class $FreezedUserModelCopyWith<$Res> {
+abstract mixin class $FreezedUserModelCopyWith<$Res> {
   factory $FreezedUserModelCopyWith(
-          FreezedUserModel value, $Res Function(FreezedUserModel) then) =
-      _$FreezedUserModelCopyWithImpl<$Res, FreezedUserModel>;
+          FreezedUserModel value, $Res Function(FreezedUserModel) _then) =
+      _$FreezedUserModelCopyWithImpl;
   @useResult
   $Res call(
       {int? id,
@@ -49,15 +73,15 @@ abstract class $FreezedUserModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FreezedUserModelCopyWithImpl<$Res, $Val extends FreezedUserModel>
+class _$FreezedUserModelCopyWithImpl<$Res>
     implements $FreezedUserModelCopyWith<$Res> {
-  _$FreezedUserModelCopyWithImpl(this._value, this._then);
+  _$FreezedUserModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final FreezedUserModel _self;
+  final $Res Function(FreezedUserModel) _then;
 
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -67,112 +91,52 @@ class _$FreezedUserModelCopyWithImpl<$Res, $Val extends FreezedUserModel>
     Object? email = freezed,
     Object? address = freezed,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as int?,
       name: freezed == name
-          ? _value.name
+          ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
       username: freezed == username
-          ? _value.username
+          ? _self.username
           : username // ignore: cast_nullable_to_non_nullable
               as String?,
       email: freezed == email
-          ? _value.email
+          ? _self.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
       address: freezed == address
-          ? _value.address
+          ? _self.address
           : address // ignore: cast_nullable_to_non_nullable
               as Address?,
-    ) as $Val);
+    ));
   }
 
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get address {
-    if (_value.address == null) {
+    if (_self.address == null) {
       return null;
     }
 
-    return $AddressCopyWith<$Res>(_value.address!, (value) {
-      return _then(_value.copyWith(address: value) as $Val);
+    return $AddressCopyWith<$Res>(_self.address!, (value) {
+      return _then(_self.copyWith(address: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$FreezedUserModelImplCopyWith<$Res>
-    implements $FreezedUserModelCopyWith<$Res> {
-  factory _$$FreezedUserModelImplCopyWith(_$FreezedUserModelImpl value,
-          $Res Function(_$FreezedUserModelImpl) then) =
-      __$$FreezedUserModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int? id,
-      String? name,
-      String? username,
-      String? email,
-      Address? address});
-
-  @override
-  $AddressCopyWith<$Res>? get address;
-}
-
-/// @nodoc
-class __$$FreezedUserModelImplCopyWithImpl<$Res>
-    extends _$FreezedUserModelCopyWithImpl<$Res, _$FreezedUserModelImpl>
-    implements _$$FreezedUserModelImplCopyWith<$Res> {
-  __$$FreezedUserModelImplCopyWithImpl(_$FreezedUserModelImpl _value,
-      $Res Function(_$FreezedUserModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? username = freezed,
-    Object? email = freezed,
-    Object? address = freezed,
-  }) {
-    return _then(_$FreezedUserModelImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      username: freezed == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String?,
-      email: freezed == email
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String?,
-      address: freezed == address
-          ? _value.address
-          : address // ignore: cast_nullable_to_non_nullable
-              as Address?,
-    ));
-  }
-}
-
-/// @nodoc
 @JsonSerializable()
-class _$FreezedUserModelImpl implements _FreezedUserModel {
-  const _$FreezedUserModelImpl(
+class _FreezedUserModel implements FreezedUserModel {
+  const _FreezedUserModel(
       {this.id, this.name, this.username, this.email, this.address});
-
-  factory _$FreezedUserModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FreezedUserModelImplFromJson(json);
+  factory _FreezedUserModel.fromJson(Map<String, dynamic> json) =>
+      _$FreezedUserModelFromJson(json);
 
   @override
   final int? id;
@@ -185,16 +149,26 @@ class _$FreezedUserModelImpl implements _FreezedUserModel {
   @override
   final Address? address;
 
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'FreezedUserModel(id: $id, name: $name, username: $username, email: $email, address: $address)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$FreezedUserModelCopyWith<_FreezedUserModel> get copyWith =>
+      __$FreezedUserModelCopyWithImpl<_FreezedUserModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$FreezedUserModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FreezedUserModelImpl &&
+            other is _FreezedUserModel &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.username, username) ||
@@ -203,135 +177,158 @@ class _$FreezedUserModelImpl implements _FreezedUserModel {
             (identical(other.address, address) || other.address == address));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, name, username, email, address);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$FreezedUserModelImplCopyWith<_$FreezedUserModelImpl> get copyWith =>
-      __$$FreezedUserModelImplCopyWithImpl<_$FreezedUserModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$FreezedUserModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'FreezedUserModel(id: $id, name: $name, username: $username, email: $email, address: $address)';
   }
 }
 
-abstract class _FreezedUserModel implements FreezedUserModel {
-  const factory _FreezedUserModel(
-      {final int? id,
-      final String? name,
-      final String? username,
-      final String? email,
-      final Address? address}) = _$FreezedUserModelImpl;
+/// @nodoc
+abstract mixin class _$FreezedUserModelCopyWith<$Res>
+    implements $FreezedUserModelCopyWith<$Res> {
+  factory _$FreezedUserModelCopyWith(
+          _FreezedUserModel value, $Res Function(_FreezedUserModel) _then) =
+      __$FreezedUserModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {int? id,
+      String? name,
+      String? username,
+      String? email,
+      Address? address});
 
-  factory _FreezedUserModel.fromJson(Map<String, dynamic> json) =
-      _$FreezedUserModelImpl.fromJson;
-
   @override
-  int? get id;
-  @override
-  String? get name;
-  @override
-  String? get username;
-  @override
-  String? get email;
-  @override
-  Address? get address;
-  @override
-  @JsonKey(ignore: true)
-  _$$FreezedUserModelImplCopyWith<_$FreezedUserModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AddressCopyWith<$Res>? get address;
 }
 
-Address _$AddressFromJson(Map<String, dynamic> json) {
-  return _Address.fromJson(json);
+/// @nodoc
+class __$FreezedUserModelCopyWithImpl<$Res>
+    implements _$FreezedUserModelCopyWith<$Res> {
+  __$FreezedUserModelCopyWithImpl(this._self, this._then);
+
+  final _FreezedUserModel _self;
+  final $Res Function(_FreezedUserModel) _then;
+
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? username = freezed,
+    Object? email = freezed,
+    Object? address = freezed,
+  }) {
+    return _then(_FreezedUserModel(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      username: freezed == username
+          ? _self.username
+          : username // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: freezed == email
+          ? _self.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
+      address: freezed == address
+          ? _self.address
+          : address // ignore: cast_nullable_to_non_nullable
+              as Address?,
+    ));
+  }
+
+  /// Create a copy of FreezedUserModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $AddressCopyWith<$Res>? get address {
+    if (_self.address == null) {
+      return null;
+    }
+
+    return $AddressCopyWith<$Res>(_self.address!, (value) {
+      return _then(_self.copyWith(address: value));
+    });
+  }
 }
 
 /// @nodoc
 mixin _$Address {
-  String? get street => throw _privateConstructorUsedError;
-  String? get zipcode => throw _privateConstructorUsedError;
+  String? get street;
+  String? get zipcode;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AddressCopyWith<Address> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AddressCopyWith<$Res> {
-  factory $AddressCopyWith(Address value, $Res Function(Address) then) =
-      _$AddressCopyWithImpl<$Res, Address>;
-  @useResult
-  $Res call({String? street, String? zipcode});
-}
-
-/// @nodoc
-class _$AddressCopyWithImpl<$Res, $Val extends Address>
-    implements $AddressCopyWith<$Res> {
-  _$AddressCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of Address
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $AddressCopyWith<Address> get copyWith =>
+      _$AddressCopyWithImpl<Address>(this as Address, _$identity);
+
+  /// Serializes this Address to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? street = freezed,
-    Object? zipcode = freezed,
-  }) {
-    return _then(_value.copyWith(
-      street: freezed == street
-          ? _value.street
-          : street // ignore: cast_nullable_to_non_nullable
-              as String?,
-      zipcode: freezed == zipcode
-          ? _value.zipcode
-          : zipcode // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is Address &&
+            (identical(other.street, street) || other.street == street) &&
+            (identical(other.zipcode, zipcode) || other.zipcode == zipcode));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, street, zipcode);
+
+  @override
+  String toString() {
+    return 'Address(street: $street, zipcode: $zipcode)';
   }
 }
 
 /// @nodoc
-abstract class _$$AddressImplCopyWith<$Res> implements $AddressCopyWith<$Res> {
-  factory _$$AddressImplCopyWith(
-          _$AddressImpl value, $Res Function(_$AddressImpl) then) =
-      __$$AddressImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $AddressCopyWith<$Res> {
+  factory $AddressCopyWith(Address value, $Res Function(Address) _then) =
+      _$AddressCopyWithImpl;
   @useResult
   $Res call({String? street, String? zipcode});
 }
 
 /// @nodoc
-class __$$AddressImplCopyWithImpl<$Res>
-    extends _$AddressCopyWithImpl<$Res, _$AddressImpl>
-    implements _$$AddressImplCopyWith<$Res> {
-  __$$AddressImplCopyWithImpl(
-      _$AddressImpl _value, $Res Function(_$AddressImpl) _then)
-      : super(_value, _then);
+class _$AddressCopyWithImpl<$Res> implements $AddressCopyWith<$Res> {
+  _$AddressCopyWithImpl(this._self, this._then);
 
+  final Address _self;
+  final $Res Function(Address) _then;
+
+  /// Create a copy of Address
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? street = freezed,
     Object? zipcode = freezed,
   }) {
-    return _then(_$AddressImpl(
+    return _then(_self.copyWith(
       street: freezed == street
-          ? _value.street
+          ? _self.street
           : street // ignore: cast_nullable_to_non_nullable
               as String?,
       zipcode: freezed == zipcode
-          ? _value.zipcode
+          ? _self.zipcode
           : zipcode // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -340,61 +337,85 @@ class __$$AddressImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AddressImpl implements _Address {
-  const _$AddressImpl({this.street, this.zipcode});
-
-  factory _$AddressImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AddressImplFromJson(json);
+class _Address implements Address {
+  const _Address({this.street, this.zipcode});
+  factory _Address.fromJson(Map<String, dynamic> json) =>
+      _$AddressFromJson(json);
 
   @override
   final String? street;
   @override
   final String? zipcode;
 
+  /// Create a copy of Address
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'Address(street: $street, zipcode: $zipcode)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$AddressCopyWith<_Address> get copyWith =>
+      __$AddressCopyWithImpl<_Address>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$AddressToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddressImpl &&
+            other is _Address &&
             (identical(other.street, street) || other.street == street) &&
             (identical(other.zipcode, zipcode) || other.zipcode == zipcode));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, street, zipcode);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$AddressImplCopyWith<_$AddressImpl> get copyWith =>
-      __$$AddressImplCopyWithImpl<_$AddressImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$AddressImplToJson(
-      this,
-    );
+  String toString() {
+    return 'Address(street: $street, zipcode: $zipcode)';
   }
 }
 
-abstract class _Address implements Address {
-  const factory _Address({final String? street, final String? zipcode}) =
-      _$AddressImpl;
-
-  factory _Address.fromJson(Map<String, dynamic> json) = _$AddressImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$AddressCopyWith<$Res> implements $AddressCopyWith<$Res> {
+  factory _$AddressCopyWith(_Address value, $Res Function(_Address) _then) =
+      __$AddressCopyWithImpl;
   @override
-  String? get street;
-  @override
-  String? get zipcode;
-  @override
-  @JsonKey(ignore: true)
-  _$$AddressImplCopyWith<_$AddressImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call({String? street, String? zipcode});
 }
+
+/// @nodoc
+class __$AddressCopyWithImpl<$Res> implements _$AddressCopyWith<$Res> {
+  __$AddressCopyWithImpl(this._self, this._then);
+
+  final _Address _self;
+  final $Res Function(_Address) _then;
+
+  /// Create a copy of Address
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? street = freezed,
+    Object? zipcode = freezed,
+  }) {
+    return _then(_Address(
+      street: freezed == street
+          ? _self.street
+          : street // ignore: cast_nullable_to_non_nullable
+              as String?,
+      zipcode: freezed == zipcode
+          ? _self.zipcode
+          : zipcode // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

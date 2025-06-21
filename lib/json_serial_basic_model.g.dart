@@ -7,7 +7,7 @@ part of 'json_serial_basic_model.dart';
 // **************************************************************************
 
 AdvanceUser _$AdvanceUserFromJson(Map<String, dynamic> json) => AdvanceUser(
-      id: json['id'] as int?,
+      id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       email: json['email'] as String?,
     );

@@ -6,10 +6,9 @@ part of 'freezed_user_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FreezedUserModelImpl _$$FreezedUserModelImplFromJson(
-        Map<String, dynamic> json) =>
-    _$FreezedUserModelImpl(
-      id: json['id'] as int?,
+_FreezedUserModel _$FreezedUserModelFromJson(Map<String, dynamic> json) =>
+    _FreezedUserModel(
+      id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       username: json['username'] as String?,
       email: json['email'] as String?,
@@ -18,8 +17,7 @@ _$FreezedUserModelImpl _$$FreezedUserModelImplFromJson(
           : Address.fromJson(json['address'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$FreezedUserModelImplToJson(
-        _$FreezedUserModelImpl instance) =>
+Map<String, dynamic> _$FreezedUserModelToJson(_FreezedUserModel instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
@@ -28,14 +26,12 @@ Map<String, dynamic> _$$FreezedUserModelImplToJson(
       'address': instance.address,
     };
 
-_$AddressImpl _$$AddressImplFromJson(Map<String, dynamic> json) =>
-    _$AddressImpl(
+_Address _$AddressFromJson(Map<String, dynamic> json) => _Address(
       street: json['street'] as String?,
       zipcode: json['zipcode'] as String?,
     );
 
-Map<String, dynamic> _$$AddressImplToJson(_$AddressImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$AddressToJson(_Address instance) => <String, dynamic>{
       'street': instance.street,
       'zipcode': instance.zipcode,
     };

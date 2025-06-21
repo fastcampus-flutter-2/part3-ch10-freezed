@@ -5,7 +5,7 @@ part 'freezed_user_model.g.dart';
 part 'freezed_user_model.freezed.dart';
 
 @freezed
-class FreezedUserModel with _$FreezedUserModel {
+abstract class FreezedUserModel with _$FreezedUserModel {
   const factory FreezedUserModel({
     int? id,
     String? name,
@@ -19,7 +19,7 @@ class FreezedUserModel with _$FreezedUserModel {
 }
 
 @freezed
-class Address with _$Address {
+abstract class Address with _$Address {
   const factory Address({
     String? street,
     String? zipcode,
